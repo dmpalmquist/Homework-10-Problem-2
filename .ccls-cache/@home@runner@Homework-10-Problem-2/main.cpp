@@ -22,5 +22,19 @@ int main() {
     cin >> sechour;
     cin.ignore();
     cin >> secmin;
+
+    THPD = sechour - firsthour; 
+    TMPD = secmin - firstmin;
+
+    cout << month << " " << day << " " << year << " ";
+
+    if(TMPD < 0){
+      TMPD += 60;
+      THPD --;
+    }
+
+    cout << THPD << " hours " << TMPD << " Minutes " << endl;
   }
+
+  
 }
